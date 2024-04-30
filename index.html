@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>CountDown Timer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form id="timerForm">
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" class="form-control" id="date" name="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" class="form-control" id="time" name="time">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Start Timer</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="timer" class="mt-4 row justify-content-center space-between">
+            <span id="days" class="flex-column m-2">00<span>Days</span></span>
+            <span id="hours" class="flex-column m-2">00<span>Hours</span></span>
+            <span id="minutes" class="flex-column m-2">00<span>Minutes</span></span>
+            <span id="seconds" class="flex-column m-2">00<span>Seconds</span></span>
+        </div>
+
+        <button id="stopButton" class="btn btn-danger mt-4">Stop Timer</button>
+        <button id="resetButton" class="btn btn-dark mt-4">Reset Timer</button>
+
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</body>
+</html>
